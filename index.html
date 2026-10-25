@@ -1382,7 +1382,7 @@ input[type=checkbox]:checked{box-shadow:0 0 0 3px color-mix(in srgb,var(--gold) 
 /* ===== DEMONSTRAÇÃO: recursos bloqueados. Troque para true para reativar. =====
    PDF    -> PDF Canhotos, PDF da OS e PDFs por linha
    FATURA -> PDF Fatura, "Gerar fatura do mês" (contratos) e troca do status da fatura */
-const FEATURES={PDF:true,FATURA:false};
+const FEATURES={PDF:true,FATURA:true};
 const NEED={pdfc:["PDF"],pdfd:["PDF"],pdfo:["PDF"],pdfcAll:["PDF"],pdfoAll:["PDF"],pdff:["PDF","FATURA"],pdffAll:["PDF","FATURA"],cfat:["PDF","FATURA"],fat:["FATURA"]},blocked=a=>!!NEED[a]&&NEED[a].some(k=>!FEATURES[k]);
 const P={
 dashboard:'<rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/>',
